@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiplayer Snake</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🐍 Multiplayer Snake</h1>
+
+  <div id="scoreboard">
+    <div class="player p1">
+      <span class="label">Player 1 (WASD)</span>
+      <span class="score" id="score1">0</span>
+    </div>
+    <div class="player p2">
+      <span class="label">Player 2 (↑↓←→)</span>
+      <span class="score" id="score2">0</span>
+    </div>
+  </div>
+
+  <canvas id="gameCanvas"></canvas>
+
+  <div id="overlay">
+    <div id="overlayBox">
+      <h2 id="overlayTitle">Multiplayer Snake</h2>
+      <p id="overlayMsg">Two players, one grid. Last snake standing wins!</p>
+      <button id="overlayBtn">Start Game</button>
+    </div>
+  </div>
+
+  <div id="controls">
+    <div>Player 1: <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd></div>
+    <div>Player 2: <kbd>↑</kbd><kbd>←</kbd><kbd>↓</kbd><kbd>→</kbd></div>
+  </div>
+
+  <script src="snake.js"></script>
+</body>
+</html>
